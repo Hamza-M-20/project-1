@@ -129,7 +129,7 @@ function moveSnake(){
     // if food is eaten
 
     if(snake[0].x == foodX && snake[0].y == foodY){
-        score+=1;
+        score+=10;
         scoreText.textContent = score;
         createFood();
     } else {
@@ -165,11 +165,14 @@ function checkGameOver(){
         running = false;
         break;
     case (snake[0].y >= gameHeight):
+        running = false;
         break;
     }
     for(let i = 1; i < snake.length; i+=1){
-    if(snake[i].x == snake[0] && snake[i].y == snake[0])
+    if(snake[i].x === snake[0] && snake[i].y === snake[0]){
         running = false;
 }
+    }
+    if(!running) displayGameover();
 
 };
