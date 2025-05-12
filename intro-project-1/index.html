@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id = "gameContainer">
-        <canvas id = "gameBoard" width = "500" height = "500"></canvas>
-        <div id ="scoreText">0</div>
-        <button id ="resetBtn">Reset</button>
+    <div id ="gameWrapper">
+    <div id ="instructions">
+        <h1>how to play</h1>
+        <p>Eat food to grow. use arrows keys to move the snake. dont hit the wall or run into yourself</p>
     </div>
-    <script src="index.js"></script>
-</body>
+    <div>
+        <div id="gameBoard" width = "500" height = "500"></div>
+        <div id ="scoreContainer">
+        <p>Score: <span id ="scoreText">0</span></p>
+        <div id ="message"></div>
     
+        </div>
+        <button id ="resetBtn">Restart</button>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src='./constants.js'></script>
+</body>
 </body>
 </html>

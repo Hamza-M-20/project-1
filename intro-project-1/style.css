@@ -1,24 +1,87 @@
 
-#gameContainer {
-    text-align: center;
-}
-#gameBoard {
-    border: 5px solid;
-
-}
-#scoreText{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100px;
-    text-align: center;
-}
-#resetBtn{
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, Sans-serif;
-    font-size: 25px;
-    border: 3px solid;
-    width: 80px;
-    height: 50px;
-    border-radius: 15px;
-    cursor: pointer;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #gameWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #instructions {
+    max-width: 400px;
     text-align: center;
-}
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  #gameBoard {
+    display: grid;
+    border: 2px solid #333;
+    background-color: #e0e0e0;
+  }
+  
+  .cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+  }
+  
+  .snake {
+    background-color: #4caf50;
+  }
+  
+  .food {
+    background-color: #f44336;
+  }
+  
+  #scoreContainer {
+    font-size: 1.2rem;
+    color: #222;
+  }
+  
+  #message {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: crimson;
+    margin-top: 10px;
+  }
+  
+  #resetBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #resetBtn:hover {
+    background-color: #555;
+  }
+  
