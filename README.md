@@ -11,8 +11,8 @@ Why This Game?
 I chose Snake because it's a timeless classic — simple in rules, but challenging in gameplay. Building it with DOM elements (instead of canvas) helped me deeply understand grid logic, element creation, and real-time updates via JavaScript.
 
 
-play it here: [
-](https://github.com/Hamza-M-20/project-1)
+play it here:[  ](https://hamza-m-20.github.io/project-1/)
+
 To play:
 - Use the arrow keys (⬅️ ⬆️ ➡️ ⬇️) to control the snake
 - Eat red squares (food) to gain 10 points
