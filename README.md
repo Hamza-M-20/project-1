@@ -76,4 +76,15 @@ MVP Features Implemented
   As a user i want the game to start immediately the moment i open the browser and restart the moment i hit the restart button.
   food will be random on the grid and new one should appear each time the snake eats it.
 
+  
+intro-project-1/
+├── index.html
+├── style.css
+├── index.js
+├── README.md
+├── assets/
+│   ├── screenshot.png
+│   └── arrow-keys.png
+  
+
   Enjoy the game — and don’t eat yourself! 🐍💥
